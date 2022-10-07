@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 const App = () => {
     const [product, setProduct] = useState('');
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
-// ...
+
     const addPosts = async (title, body) => {
         await fetch('https://localhost:8000/api/produits/add', {
             method: 'POST',
